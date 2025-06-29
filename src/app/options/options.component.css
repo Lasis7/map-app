@@ -1,0 +1,104 @@
+.optionsModal {
+  position: fixed;
+  display: flex;
+  background-color: rgb(241, 241, 241);
+  flex-direction: column;
+  inset: 0px;
+  width: 70%;
+  height: auto;
+  max-width: 300px;
+  max-height: 60vh;
+  margin: auto;
+  z-index: 1002;
+  box-shadow: 5px 5px 5px rgb(143, 143, 143);
+}
+
+.warningModal {
+  position: fixed;
+  display: flex;
+  background-color: rgb(241, 241, 241);
+  flex-direction: column;
+  inset: 0px;
+  width: 50%;
+  height: auto;
+  max-width: 550px;
+  max-height: 30vh;
+  margin: auto;
+  z-index: 2000;
+  box-shadow: 5px 5px 5px rgb(143, 143, 143);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.radiusValue {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 10px;
+}
+
+hr {
+  height: 1px;
+  width: 95%;
+  background-color: rgb(236, 236, 236);
+}
+
+.resetButtonArea {
+  display: flex;
+  flex: 1;
+  align-items: end;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 50px;
+}
+
+.resetButton {
+  background-color: rgb(211, 31, 31);
+  color: white;
+  width: 60%;
+  height: 25px;
+  border: 0;
+}
+
+mat-slider {
+  width: 300px;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1001;
+}
+
+button {
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.cancel {
+  background-color: rgb(33, 134, 33);
+  padding: 10px;
+  width: auto;
+  height: 50px;
+}
+
+.confirm {
+  background-color: rgb(201, 61, 61);
+  padding: 10px;
+  height: 50px;
+}

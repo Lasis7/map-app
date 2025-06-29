@@ -1,0 +1,32 @@
+<div class="map-container">
+  <div id="map"></div>
+</div>
+
+
+
+<div class="area">
+  <div class="score">
+    Your score: {{score}}
+  </div>
+</div>
+
+<div class="area">
+  <button class="button" (click)="refreshTarget()">
+    <span class="material-symbols-outlined">
+      refresh
+    </span>
+  </button>
+</div>
+
+<div class="area">
+  <button class="button" (click)="settingsVisibility()">
+    <span class="material-symbols-outlined">
+      settings
+    </span>
+  </button>
+</div>
+
+@if (settingsVisible) {
+<app-options (sliderValue)="changeRadius($event)" (scoreReset)="resetScore($event)"
+  (clickOutsideSettings)="clickedOutsideSettings($event)" [value]="maxMeters"></app-options>
+}

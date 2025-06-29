@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+:root {
+  --slider-height: 2vw;
+}
+.mdc-slider .mdc-slider__tick-marks {
+  height: var(--slider-height);
+}
+
+.mdc-slider .mdc-slider__track--inactive,
+.mdc-slider .mdc-slider__track {
+  height: calc(var(--slider-height));
+}
+
+.mdc-slider .mdc-slider__track--active {
+  height: var(--slider-height);
+}
+
+.mdc-slider .mdc-slider__track--active_fill {
+  height: var(--slider-height);
+  border-top-width: var(--slider-height);
+}
+
+.mdc-slider .mdc-slider__thumb-knob {
+  height: calc(var(--slider-height) + 9px);
+  width: calc(var(--slider-height) + 9px);
+}
