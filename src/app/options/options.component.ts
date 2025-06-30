@@ -9,16 +9,23 @@ import { MatSliderModule } from '@angular/material/slider';
   styleUrl: './options.component.css',
 })
 export class OptionsComponent {
+  // Slider properties
   min: number = 700;
   max: number = 2000;
   step: number = 100;
+
+  // Local state
   resetWarningVisible: boolean = false;
 
+  // Inputs
   @Input() value!: number;
+
+  // Outputs
   @Output() sliderValue = new EventEmitter<string>();
   @Output() scoreReset = new EventEmitter<string>();
   @Output() clickOutsideSettings = new EventEmitter<boolean>();
 
+  // Methods
   newRadius(value: string) {
     this.sliderValue.emit(value);
   }

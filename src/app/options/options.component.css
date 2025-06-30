@@ -1,13 +1,16 @@
+h1 {
+  font-size: clamp(24px, 2vw, 32px);
+  text-align: center;
+}
+
 .optionsModal {
   position: fixed;
   display: flex;
   background-color: rgb(241, 241, 241);
   flex-direction: column;
   inset: 0px;
-  width: 70%;
-  height: auto;
-  max-width: 300px;
-  max-height: 60vh;
+  width: clamp(200px, 50%, 1500px);
+  height: clamp(600px, 4vw, 1200px);
   margin: auto;
   z-index: 1002;
   box-shadow: 5px 5px 5px rgb(143, 143, 143);
@@ -19,10 +22,8 @@
   background-color: rgb(241, 241, 241);
   flex-direction: column;
   inset: 0px;
-  width: 50%;
-  height: auto;
-  max-width: 550px;
-  max-height: 30vh;
+  width: clamp(300px, 4vw, 1200px);
+  height: clamp(300px, 4vw, 800px);
   margin: auto;
   z-index: 2000;
   box-shadow: 5px 5px 5px rgb(143, 143, 143);
@@ -65,8 +66,9 @@ hr {
 .resetButton {
   background-color: rgb(211, 31, 31);
   color: white;
-  width: 60%;
+  width: clamp(100px, 30%, 1000px);
   height: 25px;
+  font-size: clamp(16px, 1.5vw, 20px);
   border: 0;
 }
 
@@ -84,10 +86,24 @@ mat-slider {
   z-index: 1001;
 }
 
+.footOrBike {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  gap: 30px;
+}
+
+.footOrBike button {
+  padding: 20px;
+}
+
 button {
   border: none;
   color: white;
   border-radius: 5px;
+  background-color: rgb(172, 172, 172);
 }
 
 .cancel {
