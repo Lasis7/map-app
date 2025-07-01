@@ -1,8 +1,8 @@
 <div class="backdrop" (click)="clickedOutside()"></div>
 <div class="optionsModal">
-  <h2 class="title">Options</h2>
+  <h1>Options</h1>
   <hr style="margin-bottom: -5px">
-  <h4 class="title">Maximum radius</h4>
+  <h3>Maximum radius</h3>
   <div class="radiusValue">
     <div>{{formatLabel(value)}}</div>
   </div>
@@ -12,10 +12,13 @@
     </mat-slider>
   </div>
   <hr>
+  <h3>Type</h3>
   <div class="footOrBike">
     <button>a</button>
     <button>a</button>
   </div>
+
+  <hr />
 
   <div class="resetButtonArea">
     <button class="resetButton" (click)="resetWarningVisibility()">Reset score</button>
@@ -25,7 +28,7 @@
 @if (resetWarningVisible) {
 <div class="backdrop" style="z-index: 1999" (click)="resetWarningVisibility()"></div>
 <div class="warningModal">
-  <h1>Are you sure you want to reset your score?</h1>
+  <h3>Are you sure you want to reset your score?</h3>
   <hr>
   <div class="resetButtonArea" style="align-items: center; margin-bottom: 0;">
     <button class="cancel" (click)="resetWarningVisibility()">Cancel</button>

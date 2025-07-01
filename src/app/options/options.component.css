@@ -1,5 +1,10 @@
 h1 {
-  font-size: clamp(24px, 2vw, 32px);
+  font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
+  text-align: center;
+}
+
+h3 {
+  font-size: clamp(0.875rem, 2vw + 1rem, 1.5rem);
   text-align: center;
 }
 
@@ -9,8 +14,8 @@ h1 {
   background-color: rgb(241, 241, 241);
   flex-direction: column;
   inset: 0px;
-  width: clamp(200px, 50%, 1500px);
-  height: clamp(600px, 4vw, 1200px);
+  width: clamp(200px, 70vw, 1500px);
+  height: clamp(500px, 60vh, 800px);
   margin: auto;
   z-index: 1002;
   box-shadow: 5px 5px 5px rgb(143, 143, 143);
@@ -22,17 +27,11 @@ h1 {
   background-color: rgb(241, 241, 241);
   flex-direction: column;
   inset: 0px;
-  width: clamp(300px, 4vw, 1200px);
-  height: clamp(300px, 4vw, 800px);
+  width: clamp(300px, 50vw, 800px);
+  height: clamp(300px, 40vh, 700px);
   margin: auto;
   z-index: 2000;
   box-shadow: 5px 5px 5px rgb(143, 143, 143);
-}
-
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .slider {
@@ -43,7 +42,6 @@ h1 {
 
 .radiusValue {
   display: flex;
-  align-items: end;
   justify-content: center;
   padding: 10px;
 }
@@ -66,8 +64,8 @@ hr {
 .resetButton {
   background-color: rgb(211, 31, 31);
   color: white;
-  width: clamp(100px, 30%, 1000px);
-  height: 25px;
+  width: clamp(150px, 30vw, 500px);
+  padding: clamp(0.5rem, 10vw, 1.1rem);
   font-size: clamp(16px, 1.5vw, 20px);
   border: 0;
 }
@@ -90,13 +88,12 @@ mat-slider {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 20px;
-  margin-left: 20px;
   gap: 30px;
 }
 
 .footOrBike button {
-  padding: 20px;
+  font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
+  padding: clamp(0.875rem, 2vw + 1rem, 1.275rem);
 }
 
 button {
@@ -108,13 +105,12 @@ button {
 
 .cancel {
   background-color: rgb(33, 134, 33);
-  padding: 10px;
-  width: auto;
-  height: 50px;
+  padding: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(16px, 1.5vw, 20px);
 }
 
 .confirm {
   background-color: rgb(201, 61, 61);
-  padding: 10px;
-  height: 50px;
+  padding: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(16px, 1.5vw, 20px);
 }
